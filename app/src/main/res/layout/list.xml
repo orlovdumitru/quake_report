@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/eqScale"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/magnitude_circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="8.9"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/eqOffSet"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="16dp"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        tools:text="La ce distanta"/>
+
+    <TextView
+        android:id="@+id/eqCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/textColorEarthquakeLocation"
+        tools:text="Orasul unde a fost cutremur"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:layout_gravity="right">
+
+    <TextView
+        android:id="@+id/eqDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textAlignment="textEnd"
+        tools:text="Jan/01/2000"/>
+
+    <TextView
+        android:id="@+id/eqHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textAlignment="textEnd"
+        tools:text="15:40:36"/>
+    </LinearLayout>
+</LinearLayout>
